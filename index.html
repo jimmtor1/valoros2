@@ -6,46 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/valoros.css" />
     <link rel="icon" href="img/LogoValoros -icono.jpg" />
 </head>
 <body>
     
-    <header style="width: 90%; margin: auto;">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg p-0 fs-4">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand p-0" href="#">
                     <img class="img" src="img/LogoValoros.jpg" alt="logo-valoros" />
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active">Home</a>
+                    </li> 
                     <li class="nav-item">
                         <a class="nav-link" href="#">Corporativo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contactenos</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Idioma</a>
-                    </li>                     
+                    </li>                      -->
                 </ul>
                 </div>
             </div>
         </nav>        
     </header>
 
-    <div style="width: 90%; margin: auto;">
+    <main class="bg-white mx-auto">
 
         <section>
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg mt-1 fs-4">
                 <div class="container-fluid">                    
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">                                                
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">                                                                          
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Productos
@@ -76,7 +80,7 @@
             </nav>
         </section>
 
-        <section style="height: 500;">
+        <section>
 
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -102,14 +106,14 @@
 
         </section>
 
-        <section>
+        <section class="container">
 
             <div class="mt-5">
                 
-                <h1 class="text-center">BIENVENIDOS A VALOROS DE COLOMBIA</h1>
+                <h1 class="text-center mb-5">BIENVENIDOS A VALOROS DE COLOMBIA</h1>
 
-                <p>
-                    Somos una compañia dedicada a la industrialización de productos a partir de 
+                <p class="fs-5 mb-5">
+                    Somos una compañía dedicada a la industrialización de productos a partir de 
                     metales preciosos, con procesos productivos tecnificados, sostenibles 
                     ambientalmente y un equipo humano altamente capacitado.
                     Nuestra trayectoria y reconocimiento en el mercado colombiano se fundamentan 
@@ -119,14 +123,14 @@
 
             </div>
 
-            <div class="row" >
+            <div class="row mb-5">
 
                 <div class="col">
-                    <img style="height: 200px" src="img/imagen-muestra2.png" class="d-block w-100" alt="...">
+                    <img style="height: 400px" src="img/imagen-muestra2.png" class="d-block w-100" alt="...">
                 </div>
 
-                <div class="col">
-                    <p>
+                <div class="col mb-5 d-flex align-items-center ">
+                    <p class="fs-5">
                         En VALOROS DE COLOMBIA trabajamos con la convicción de que nuestra oferta de 
                         valor involucre no solo competitividad sino, el acompañamiento permanente con 
                         transparencia, responsabilidad y legalidad; generando relaciones de mutuo beneficio. 
@@ -135,19 +139,22 @@
 
             </div>
 
-            <div class="row" >
+            <div class="row">
 
-                <div class="col-6">
-                    <img class="w-75" src="img/croquis.png" alt="croquis" />
+                <div class="col-7">
+                    <img class="w-100" src="img/croquis.png" alt="croquis" />
                 </div>
 
-                <div class="col-6">
+                <div class="col-5 d-flex align-items-center justify-content-center">
                     <div>
-                        <h3>Contacta con nosotros</h3>
-                        <a class="boton" target="_blank" onclick="gtag_report_conversion('https://wa.me/+573012784797/?text=Hola, quiero conocer más de los servicios')">Enviar un mensaje<br/><br/>
-                            <img src="img/whatsapp.svg" alt="whatsapp" style="width: 48px"/>
-                        </a>
-                    </div>
+                        <h3 class="text-center bg-warning">Contacta con nosotros</h3>
+                        
+                        <div class="text-center social_div">
+                            <a href="#"><img style="width: 80px;" src="img/facebook.svg" alt="facebook"/></a>
+                            <a href="#"><img style="width: 80px;" src="img/insta.svg" alt="whatsapp"/></a>
+                            <a href="#"><img style="width: 80px;" src="img/whatsapp-black.svg" alt="whatsapp"/></a>                            
+                        </div>
+                    </div>  
                 </div>
 
             </div>
@@ -157,10 +164,18 @@
 
         </section>
 
-    </div>
-    
-    <script src="js/bootstrap.bundle.min.js"></script>
-  
+    </main>
 
+    <footer>
+        <div class="footer_div1 fs-5">
+            <p>Copyright © 2023 Valoros de Colombia</p>
+        </div>
+
+        <div class="footer_div2"></div>
+    </footer>
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
