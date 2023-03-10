@@ -30,8 +30,16 @@ header{
   color: #fbb231;  
 }
 
+.nav-link{
+  color: #363636;
+}
+
 main{
   width: 90%;  
+}
+
+h1{
+  color: #363636;
 }
 
 .navbar-nav .nav-link.active{
@@ -77,7 +85,7 @@ main{
   display: flex;
   margin: 0 auto;
   text-align: center;
-  padding: 60px;
+  padding: 60px;  
   flex-direction: column;
   background-color: rgb(0 0 0 / 10%); 
   font-family: 'Roboto', sans-serif;
@@ -90,5 +98,116 @@ main{
   display: flex;
   margin: 0 auto;
   background-color: #363636;
+}
+
+
+nav {
+  font-size: 1.3rem; /* Tamaño de letra fs-4 de Bootstrap */
+}
+
+@media (max-width: 576px) {
+  nav {
+    font-size: 1.0rem; /* Tamaño de letra fs-4 de Bootstrap */
+  }
+}
+
+
+
+/* solo para nav nuevo */
+nav {
+  /* background-color: #333;
+  color: #fff; */
+  position: relative; /* Agregado para establecer la posición de referencia para z-index */
+  z-index: 9999; /* Agregado para establecer el valor de z-index */
+}
+
+nav ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 300px;
+}
+
+nav li {
+  /* flex: 1;
+  text-align: center; */
+  position: relative;
+}
+
+/* nav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none; 
+} */
+
+/* nav a:hover {
+  background-color: #555;
+} */
+
+nav .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+/* muestra submenu al pasar el mouse */
+nav .has-submenu:hover > .submenu {
+  display: block;
+}
+
+nav .submenu li {  
+  display: block;
+}
+
+nav .submenu a {
+  padding: 10px;  
+  /* width: 200px; */
+}
+
+nav .submenu .has-submenu {
+  position: relative;
+}
+
+nav .submenu .has-submenu > .submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+  
+}
+
+nav .submenu .has-submenu:hover > .submenu {
+  display: block;
+  width: 100%;
+
+}
+
+.dark, .dark .submenu{
+  background-color: #363636; 
+}
+
+.dark a{
+  color: white;
+  /* background-color: #363636; */
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
+
+.dark a:hover{
+  color: white;
+  background-color: #fbb231;
+}
+
+.iconos_sobre_nosotros{
+  display: block; 
+  text-align: center;
+}
+
+.iconos_sobre_nosotros img{
+  width: 100px;
 }
 
