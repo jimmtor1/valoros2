@@ -76,7 +76,16 @@ header ul{
   color: #363636;
 }
 
+<<<<<<< HEAD
 
+
+h1{
+  color: #363636;
+=======
+main{
+  width: 90%;  
+>>>>>>> 3531ab13ebffc6e3e3ba3c940fcc4b8cb9a4551e
+}
 
 h1{
   color: #363636;
@@ -130,6 +139,7 @@ h1{
   background-color: #363636;
 }
 
+<<<<<<< HEAD
 .hero-section {
   position: relative;
   height: 80vh; 
@@ -157,11 +167,14 @@ h1{
   z-index: 1;
 }
 
+=======
+>>>>>>> 3531ab13ebffc6e3e3ba3c940fcc4b8cb9a4551e
 
 nav {
   font-size: 1.3rem; /* Tamaño de letra fs-4 de Bootstrap */
 }
 
+<<<<<<< HEAD
 .icon-menu{
   display: none;
 }
@@ -180,6 +193,12 @@ nav {
     display: none;
   }
  
+=======
+@media (max-width: 576px) {
+  nav {
+    font-size: 1.0rem; /* Tamaño de letra fs-4 de Bootstrap */
+  }
+>>>>>>> 3531ab13ebffc6e3e3ba3c940fcc4b8cb9a4551e
 }
 
 
@@ -189,7 +208,11 @@ nav {
   /* background-color: #333;
   color: #fff; */
   position: relative; /* Agregado para establecer la posición de referencia para z-index */
+<<<<<<< HEAD
   z-index: 99; /* Agregado para establecer el valor de z-index */
+=======
+  z-index: 9999; /* Agregado para establecer el valor de z-index */
+>>>>>>> 3531ab13ebffc6e3e3ba3c940fcc4b8cb9a4551e
 }
 
 nav ul {
@@ -224,10 +247,13 @@ nav .submenu {
   display: none;
 }
 
+<<<<<<< HEAD
 /* nav .submenu:hover {
   background-color: #F3B830;
 } */
 
+=======
+>>>>>>> 3531ab13ebffc6e3e3ba3c940fcc4b8cb9a4551e
 /* muestra submenu al pasar el mouse */
 nav .has-submenu:hover > .submenu {
   display: block;
@@ -237,10 +263,17 @@ nav .submenu li {
   display: block;
 }
 
+<<<<<<< HEAD
 /* nav .submenu a { */
   /* padding: 10px;   */
   /* width: 200px; */
 /* } */
+=======
+nav .submenu a {
+  padding: 10px;  
+  /* width: 200px; */
+}
+>>>>>>> 3531ab13ebffc6e3e3ba3c940fcc4b8cb9a4551e
 
 nav .submenu .has-submenu {
   position: relative;
@@ -286,6 +319,7 @@ nav .submenu .has-submenu:hover > .submenu {
   width: 100px;
 }
 
+<<<<<<< HEAD
 
 
 /* aside{
@@ -323,3 +357,5 @@ nav .submenu .has-submenu:hover > .submenu {
   font-weight: bold;
 }
 
+=======
+>>>>>>> 3531ab13ebffc6e3e3ba3c940fcc4b8cb9a4551e
