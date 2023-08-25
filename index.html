@@ -1,181 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Valoros</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/valoros.css" />
     <link rel="icon" href="img/LogoValoros -icono.jpg" />
 </head>
+
 <body>
-    
-    <header>
-        <nav class="navbar navbar-expand-lg p-0 fs-4">
-            <div class="container">
-                <a class="navbar-brand p-0" href="#">
-                    <img class="img" src="img/LogoValoros.jpg" alt="logo-valoros" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active">Home</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Corporativo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contactenos</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Idioma</a>
-                    </li>                      -->
-                </ul>
-                </div>
+
+    <!-- aside oculto -->
+    <input type="checkbox" id="menu-bar" />
+
+    <aside class="aside d-flex">
+
+        <ul class="w-100 text-center pt-5">
+            <li>
+                <a class="text-decoration-none text-white" href="/contenido/Corporativo.html">CORPORATIVO</a>
+            </li>
+            <li>
+                <a class="text-decoration-none text-white" href="/contenido/Servicios.html">SOSTENIBILIDAD</a>
+            </li>
+            <li>
+                <a class="text-decoration-none text-white" href="/contenido/Sobre nosotros.html">CONTACTANOS</a>
+            </li>
+        </ul>
+
+        <label for="menu-bar" class="close-bar"><img class="w-100" src="img/close-bold-svgrepo-com.svg"
+                alt="menu" /></label>
+
+    </aside>
+
+    <!-- fin aside oculto -->
+
+
+    <div class="container">
+
+        <!-- logo-menu -->
+        <header class="d-flex justify-content-between">
+
+
+            <a href="index.html">
+                <img class="w-75" style="margin-left: 20px;" src="img/LogoValoros.jpg" alt="logo-valoros" />
+            </a>
+
+
+            <div class="d-flex d-sm-none w-100 justify-content-end" style="align-items: center;">
+                <label for="menu-bar" class="" style="width: 18%;">
+                    <img class="w-100" src="img/menu.svg" alt="menu" /></label>
             </div>
-        </nav>        
-    </header>
 
-    <main class="bg-white mx-auto">
 
-        <section>
-            <nav class="navbar navbar-expand-lg mt-1 fs-4">
-                <div class="container-fluid">                    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">                                                                          
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Productos
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Oro</a></li>
-                                    <li><a class="dropdown-item" href="#">Plata</a></li>                                
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Servicios
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Fundición de Metales Preciosos</a></li>
-                                    <li><a class="dropdown-item" href="#">Refinación de Metales Preciosos</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sostenibilidad</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
-                            </li> -->
-                        </ul>                    
+            <div class="d-none d-sm-flex justify-content-center">
+                <ul class="d-flex h-100">
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="corporativo.html">Corporativo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="sostenibilidad.html">Sostenibilidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="contacto.html">Contáctenos</a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+        <!-- logo-menu -->
+
+        <main class="bg-white mx-auto mb-1">
+
+            <!-- menu:productos-servicios -->
+            <section class="p-0 m-0">
+                <nav class="dark p-0 m-0">
+                    <ul class="p-0 m-0">
+
+                        <li class="has-submenu">
+                            <a class="h-100 p-2" href="#">
+                                Productos
+                                <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                </svg>
+                            </a>
+                            <ul class="submenu">
+                                <li class="has-submenu">
+                                    <a class="nav-link" href="#">Oro</a>
+                                    <ul class="submenu">
+                                        <li><a class="nav-link" href="#">Oro Puro</a></li>
+                                        <li><a class="nav-link" href="#">Cianuro de Oro y Potasio</a></li>
+                                        <li><a class="nav-link" href="#">Hilo de Oro</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#">Plata</a>
+                                    <ul class="submenu">
+                                        <li><a class="nav-link" href="#">Ánodos de Plata</a></li>
+                                        <li><a class="nav-link" href="#">Cianuro de Plata</a></li>
+                                        <li><a class="nav-link" href="#">Cianuro de Plata y Potasio</a></li>
+                                        <li><a class="nav-link" href="#">Hilo de Plata</a></li>
+                                        <li><a class="nav-link" href="#">Nitrato de Plata</a></li>
+                                        <li><a class="nav-link" href="#">Plata Pura</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu p-0">
+                            <a class="h-100 py-2 p-2" href="#">Servicios</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a class="nav-link" href="#">Fundición de Metales Preciosos</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#">Refinación de Metales Preciosos</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- fin menu:productos-servicios -->
+
+            <!-- carousel -->
+
+            <!-- <section class="mb-5">
+
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item height-50vh active">
+                            <img style="height: 500px" src="img/IMG_9787.JPG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item height-50vh">
+                            <img style="height: 500px" src="img/Chemical hero.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item height-50vh">
+                            <img style="height: 500px" src="img/industry.jpg" class="d-block w-100" alt="...">
+                        </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </nav>
-        </section>
 
-        <section>
+            </section> -->
 
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item height-50vh active">
-                    <img style="height: 500px" src="img/imagen-muestra.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item height-50vh">
-                    <img style="height: 500px" src="img/Chemical hero.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item height-50vh">
-                    <img style="height: 500px" src="img/industry.jpg" class="d-block w-100"  alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+            <section class="hero-section">
+                <video class="video-background" autoplay loop muted playsinline>
+                    <source src="img/CORPORATIVO.mp4" type="video/mp4">
+                    Tu navegador no admite la reproducción de videos.
+                </video>
+            </section>
 
-        </section>
+            <!-- fin carousel -->
 
-        <section class="container">
+            <!-- presentation -->
 
-            <div class="mt-5">
-                
-                <h1 class="text-center mb-5">BIENVENIDOS A VALOROS DE COLOMBIA</h1>
+            <section class="mt-5 px-5">
+
+                <h1 class="text-center mb-5 title">BIENVENIDOS A VALOROS DE COLOMBIA</h1>
 
                 <p class="fs-5 mb-5">
-                    Somos una compañía dedicada a la industrialización de productos a partir de 
-                    metales preciosos, con procesos productivos tecnificados, sostenibles 
+                    Somos una compañía dedicada a la industrialización de productos a partir de
+                    metales preciosos, con procesos productivos tecnificados, sostenibles
                     ambientalmente y un equipo humano altamente capacitado.
-                    Nuestra trayectoria y reconocimiento en el mercado colombiano se fundamentan 
-                    en la calidad de nuestros productos y servicios, el cumplimiento de nuestra 
+                    Nuestra trayectoria y reconocimiento en el mercado colombiano se fundamentan
+                    en la calidad de nuestros productos y servicios, el cumplimiento de nuestra
                     promesa de venta y el buen servicio.
                 </p>
 
-            </div>
+            </section>
 
-            <div class="row mb-5">
+            <!-- fin presentation -->
 
-                <div class="col">
-                    <img style="height: 400px" src="img/imagen-muestra2.png" class="d-block w-100" alt="...">
+            <!-- image+presentation -->
+            <section class="row mb-5 px-5">
+
+                <!-- <div class="row mb-5"> -->
+
+                <div class="col-12 col-lg-6 mb-3">
+                    <img style="border-radius: 5px;" src="img/Oro-plata.png" class="d-block w-100" alt="..." />
                 </div>
 
-                <div class="col mb-5 d-flex align-items-center ">
+                <div class="col-12 col-lg-5 d-flex align-items-center ">
                     <p class="fs-5">
-                        En VALOROS DE COLOMBIA trabajamos con la convicción de que nuestra oferta de 
-                        valor involucre no solo competitividad sino, el acompañamiento permanente con 
-                        transparencia, responsabilidad y legalidad; generando relaciones de mutuo beneficio. 
+                        En VALOROS DE COLOMBIA trabajamos con la convicción de que nuestra oferta de
+                        valor involucre no solo competitividad sino, el acompañamiento permanente con
+                        transparencia, responsabilidad y legalidad; generando relaciones de mutuo beneficio.
                     </p>
                 </div>
 
-            </div>
+                <!-- </div> -->
+            </section>
 
-            <div class="row">
 
-                <div class="col-7">
-                    <img class="w-100" src="img/croquis.png" alt="croquis" />
-                </div>
+            <!-- croquis-contacta -->
+            <section>
+                <div class="row">
 
-                <div class="col-5 d-flex align-items-center justify-content-center">
-                    <div>
-                        <h3 class="text-center bg-warning">Contacta con nosotros</h3>
-                        
-                        <div class="text-center social_div">
-                            <a href="#"><img style="width: 80px;" src="img/facebook.svg" alt="facebook"/></a>
-                            <a href="#"><img style="width: 80px;" src="img/insta.svg" alt="whatsapp"/></a>
-                            <a href="#"><img style="width: 80px;" src="img/whatsapp-black.svg" alt="whatsapp"/></a>                            
+                    <div class="col-12 col-sm-7 mb-3">
+                        <img class="w-100" src="img/croquis.png" alt="croquis" />
+                    </div>
+
+                    <div class="col-12 col-sm-5 d-flex align-items-center justify-content-center">
+                        <div>
+                            <h3 class="text-center bg-warning">Contacta con nosotros</h3>
+
+                            <div class="text-center social_div">
+                                <a href="#"><img style="width: 3em;" src="img/facebook.svg" alt="facebook" /></a>
+                                <a href="#"><img style="width: 3em;" src="img/insta.svg" alt="whatsapp" /></a>
+                                <a href="#"><img style="width: 3em;" src="img/whatsapp-black.svg" alt="whatsapp" /></a>
+                            </div>
                         </div>
-                    </div>  
+                    </div>
+
                 </div>
 
+            </section>
+            <!-- croquis-contacta -->
+
+        </main>
+
+
+
+        <footer class="bg-white">
+            <hr class="m-0">
+            <div class="row row-cols-1 row-cols-sm-2 px-5 py-3">
+                <div class="col text-center">
+                    <p>Medellín - Antioquia</p>
+                    <p>Tel.: +604 3629056</p>
+                    <p>Cel/wp: +57 3012784797</p>
+                    <p>info@valoros.co</p>
+                </div>
+
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img src="img/LogoValoros.jpg" alt="logo-valoros" />
+                </div>
             </div>
 
+            <div class="footer_div2 fs-6 text-white text-center">
+                <p class="py-3">Copyright © 2023 Valoros de Colombia</p>
+            </div>
 
-            
+        </footer>
 
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="footer_div1 fs-5">
-            <p>Copyright © 2023 Valoros de Colombia</p>
-        </div>
-
-        <div class="footer_div2"></div>
-    </footer>
-    
-
+    </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+
+
 </body>
+
 </html>
