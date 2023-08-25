@@ -1,6 +1,7 @@
 :root{
   --gold: #F3B830;
   --negro: #373735;
+  --black2:#30353B;
 }
 
 *{
@@ -82,8 +83,8 @@ h1{
   color: #363636;
 }
 
-.navbar-nav .nav-link.active{
-  color: #fbb231;
+.active{
+  color: var(--gold);  
 }
 
 
@@ -322,4 +323,54 @@ nav .submenu .has-submenu:hover > .submenu {
   color: var(--gold);
   font-weight: bold;
 }
+
+.contact{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  color: #FFF;
+}
+
+.item_contact{
+  width: 25%;
+  padding: 60px 0;
+  text-align: center;
+  background: linear-gradient(180deg, var(--negro) 0%, var(--black2) 100%);
+}
+
+.item_contact--gold{
+  background: linear-gradient(180deg, var(--gold) 0%, white 100%);
+  color: var(--negro);
+
+}
+
+.contact_icon{
+  font-size: 18px;
+  color: var(--gold);
+  /* line-height: 20px; */
+  /* margin-right: 4px; */
+}
+
+.contact_icon--modifier{
+  color: var(--black2);
+}
+
+.contact_title{
+  font-size: 16px;
+  /* line-height: 20px; */
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: var(--gold);
+  border-radius: 50%; /* Aplica la forma de círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
 
