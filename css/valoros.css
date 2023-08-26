@@ -194,6 +194,11 @@ nav {
   header ul{
     display: none;
   }
+
+  .hero-section {    
+    height: 45vh; 
+    
+  }
  
 }
 
