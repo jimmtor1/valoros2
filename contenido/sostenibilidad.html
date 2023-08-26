@@ -13,6 +13,42 @@
 
 <body>
 
+     <!-- aside oculto -->
+     <div>
+        <input type="checkbox" id="menu-bar" />
+        <aside class="aside d-flex">
+
+            <ul class="w-100 pt-5">
+                <li>
+                    <a class="text-decoration-none text-white" href="Corporativo.html">CORPORATIVO
+                        <i class='bx bx-chevron-down fs-2'></i>
+                    </a>
+                    <ul class="py-2">
+                        <li class="menu-item">
+                            <a class="text-decoration-none" href="corporativo.html">Nuestra
+                                hitoria</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="text-decoration-none" href="compromiso.html">Nuestro
+                                compromiso legal</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="text-decoration-none active" href="sostenibilidad.html">SOSTENIBILIDAD</a>
+                </li>
+                <li class="menu-item">
+                    <a class="text-decoration-none" href="contacto.html">CONTACTANOS</a>
+                </li>
+            </ul>
+
+            <label for="menu-bar" class="close-bar"><img class="w-100" src="../img/close-bold-svgrepo-com.svg"
+                    alt="menu" /></label>
+
+        </aside>
+    </div>
+    <!-- fin aside oculto -->
+
     <div class="container p-0">
 
         <!-- logo-menu -->
@@ -30,8 +66,18 @@
 
             <div class="d-none d-sm-flex justify-content-center">
                 <ul class="d-flex h-100">
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="corporativo.html">Corporativo</a>
+                    <li class="has-submenu" style="position: relative;">
+                        <a class="nav-link fs-5 d-flex" href="#">Corporativo
+                            <i class='bx bx-chevron-down fs-2'></i>
+                        </a>
+                        <ul class="submenu py-2" style="background-color: white;z-index: 100; border: 1px solid;">
+                            <li>
+                                <a class="nav-link" href="corporativo.html">Nuestra hitoria</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="compromiso.html">Nuestro compromiso legal</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active fs-5" href="sostenibilidad.html">Sostenibilidad</a>
@@ -54,13 +100,9 @@
                     <ul class="p-0 m-0">
 
                         <li class="has-submenu">
-                            <a class="h-100 p-2" href="#">
+                            <a class="h-100 p-2 d-flex" href="#">
                                 Productos
-                                <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em"
-                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                    <path
-                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                                </svg>
+                                <i class='bx bx-chevron-down fs-2'></i>
                             </a>
                             <ul class="submenu">
                                 <li>
@@ -103,19 +145,15 @@
                 </div>
                 
 
-                <div class="video-container text-center">
-
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EFsl7-UC4ZM?si=6NV2mPR-WDP3iweo"
+                <div class="row text-center">
+                    <iframe class="col" width="100%" height="380" src="https://www.youtube.com/embed/EFsl7-UC4ZM?si=6NV2mPR-WDP3iweo"
                         title="video Reverd-Ser" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
                     </iframe>
-
                 </div>
                 <br>
             </section>
-
-
 
         </main>
 

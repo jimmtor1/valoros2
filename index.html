@@ -15,27 +15,39 @@
 <body>
 
     <!-- aside oculto -->
-    <input type="checkbox" id="menu-bar" />
+    <div>
+        <input type="checkbox" id="menu-bar" />
+        <aside class="aside d-flex">
 
-    <aside class="aside d-flex">
+            <ul class="w-100 pt-5">
+                <li>
+                    <a class="text-decoration-none text-white" href="#">CORPORATIVO
+                        <i class='bx bx-chevron-down fs-2'></i>
+                    </a>
+                    <ul class="py-2">
+                        <li class="menu-item">
+                            <a class="text-decoration-none text-white" href="contenido/corporativo.html">Nuestra
+                                hitoria</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="text-decoration-none text-white" href="contenido/compromiso.html">Nuestro
+                                compromiso legal</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="text-decoration-none text-white" href="/contenido/sostenibilidad.html">SOSTENIBILIDAD</a>
+                </li>
+                <li class="menu-item">
+                    <a class="text-decoration-none text-white" href="/contenido/contacto.html">CONTACTANOS</a>
+                </li>
+            </ul>
 
-        <ul class="w-100 text-center pt-5">
-            <li>
-                <a class="text-decoration-none text-white" href="/contenido/Corporativo.html">CORPORATIVO</a>
-            </li>
-            <li>
-                <a class="text-decoration-none text-white" href="/contenido/Servicios.html">SOSTENIBILIDAD</a>
-            </li>
-            <li>
-                <a class="text-decoration-none text-white" href="/contenido/Sobre nosotros.html">CONTACTANOS</a>
-            </li>
-        </ul>
+            <label for="menu-bar" class="close-bar"><img class="w-100" src="img/close-bold-svgrepo-com.svg"
+                    alt="menu" /></label>
 
-        <label for="menu-bar" class="close-bar"><img class="w-100" src="img/close-bold-svgrepo-com.svg"
-                alt="menu" /></label>
-
-    </aside>
-
+        </aside>
+    </div>
     <!-- fin aside oculto -->
 
 
@@ -58,8 +70,19 @@
 
             <div class="d-none d-sm-flex justify-content-center">
                 <ul class="d-flex h-100">
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="contenido/corporativo.html">Corporativo</a>
+
+                    <li class="has-submenu" style="position: relative;">
+                        <a class="nav-link fs-5 d-flex" href="#">Corporativo
+                            <i class='bx bx-chevron-down fs-2'></i>
+                        </a>
+                        <ul class="submenu py-2" style="background-color: white;z-index: 100; border: 1px solid;">
+                            <li>
+                                <a class="nav-link" href="contenido/corporativo.html">Nuestra hitoria</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="contenido/compromiso.html">Nuestro compromiso legal</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-5" href="contenido/sostenibilidad.html">Sostenibilidad</a>
@@ -83,7 +106,7 @@
                         <li class="has-submenu">
                             <a class="h-100 p-2 d-flex" href="#">
                                 Productos
-                                <i class='bx bx-chevron-down fs-2'></i>                               
+                                <i class='bx bx-chevron-down fs-2'></i>
                             </a>
                             <ul class="submenu">
                                 <li>
@@ -161,9 +184,9 @@
                             <h3 class="text-center" style="color: #F3B830;">Contacta con nosotros</h3>
 
                             <div class="text-center">
-                                <a  href="#"><img class="social-icon" src="img/facebook.svg" alt="facebook" /></a>
-                                <a  href="#"><img class="social-icon" src="img/insta.svg" alt="whatsapp" /></a>
-                                <a  href="#"><img class="social-icon" src="img/whatsapp-black.svg" alt="whatsapp" /></a>
+                                <a href="#"><img class="social-icon" src="img/facebook.svg" alt="facebook" /></a>
+                                <a href="#"><img class="social-icon" src="img/insta.svg" alt="whatsapp" /></a>
+                                <a href="#"><img class="social-icon" src="img/whatsapp-black.svg" alt="whatsapp" /></a>
                             </div>
                         </div>
                     </div>

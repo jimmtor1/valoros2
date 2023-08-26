@@ -38,10 +38,24 @@ aside ul li{
   list-style: none;   
 }
 
-aside ul li:hover{
+.menu-item:hover{
   background-color: var(--gold);
   color: var(--negro)  
 }
+
+.menu-item .active{  
+  color: var(--gold) 
+}
+
+.menu-item a{  
+  color: white; 
+}
+
+
+/* aside ul li:hover{
+  background-color: var(--gold);
+  color: var(--negro)  
+} */
 
 .close-bar{
   cursor: pointer;  
@@ -220,7 +234,7 @@ nav li {
   background-color: #555;
 } */
 
-nav .submenu {
+.submenu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -233,11 +247,11 @@ nav .submenu {
 } */
 
 /* muestra submenu al pasar el mouse */
-nav .has-submenu:hover > .submenu {
-  display: block;
+.has-submenu:hover > .submenu {
+  display: block;    
 }
 
-nav .submenu li {  
+.submenu li {  
   display: block;
 }
 
@@ -246,11 +260,11 @@ nav .submenu li {
   /* width: 200px; */
 /* } */
 
-nav .submenu .has-submenu {
+.submenu .has-submenu {
   position: relative;
 }
 
-nav .submenu .has-submenu > .submenu {
+.submenu .has-submenu > .submenu {
   position: absolute;
   top: 0;
   left: 100%;
@@ -258,7 +272,7 @@ nav .submenu .has-submenu > .submenu {
   
 }
 
-nav .submenu .has-submenu:hover > .submenu {
+.submenu .has-submenu:hover > .submenu {
   display: block;
   width: 100%;
 

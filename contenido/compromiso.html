@@ -14,6 +14,44 @@
 
 <body>
 
+    <!-- aside oculto -->
+    <div>
+        <input type="checkbox" id="menu-bar" />
+        <aside class="aside d-flex">
+
+            <ul class="w-100 pt-5">
+                <li>
+                    <a class="text-decoration-none text-white" href="#">CORPORATIVO
+                        <i class='bx bx-chevron-down fs-2'></i>
+                    </a>
+                    <ul class="py-2">
+                        <li class="menu-item">
+                            <a class="text-decoration-none" href="corporativo.html">
+                                Nuestra hitoria
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="text-decoration-none active" href="compromiso.html">
+                                Nuestro compromiso legal
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="text-decoration-none" href="sostenibilidad.html">SOSTENIBILIDAD</a>
+                </li>
+                <li class="menu-item">
+                    <a class="text-decoration-none" href="contacto.html">CONTACTANOS</a>
+                </li>
+            </ul>
+
+            <label for="menu-bar" class="close-bar"><img class="w-100" src="../img/close-bold-svgrepo-com.svg"
+                    alt="menu" /></label>
+
+        </aside>
+    </div>
+    <!-- fin aside oculto -->
+
     <div class="container p-0">
 
         <!-- logo-menu -->
@@ -31,8 +69,18 @@
 
             <div class="d-none d-sm-flex justify-content-center">
                 <ul class="d-flex h-100">
-                    <li class="nav-item ">
-                        <a class="nav-link fs-4" href="corporativo.html">Corporativo</a>
+                    <li class="has-submenu" style="position: relative;">
+                        <a class="nav-link fs-5 d-flex active" href="#">Corporativo
+                            <i class='bx bx-chevron-down fs-2'></i>
+                        </a>
+                        <ul class="submenu py-2" style="background-color: white;z-index: 100; border: 1px solid;">
+                            <li>
+                                <a class="nav-link" href="corporativo.html">Nuestra hitoria</a>
+                            </li>
+                            <li>
+                                <a class="nav-link active" href="compromiso.html">Nuestro compromiso legal</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-4" href="sostenibilidad.html">Sostenibilidad</a>
@@ -48,82 +96,107 @@
 
         <main class="mx-auto mb-1">
 
-           <!-- menu:productos-servicios -->
-           <section class="p-0 m-0">
-            <nav class="dark p-0 m-0">
-                <ul class="p-0 m-0">
+            <!-- menu:productos-servicios -->
+            <section class="p-0 m-0">
+                <nav class="dark p-0 m-0">
+                    <ul class="p-0 m-0">
 
-                    <li class="has-submenu">
-                        <a class="h-100 p-2" href="#">
-                            Productos
-                            <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em"
-                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                <path
-                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                            </svg>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a class="nav-link" href="#">Linea de Oro</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="#">Linea de Plata</a>
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="has-submenu">
+                            <a class="h-100 p-2 d-flex" href="#">
+                                Productos
+                                <i class='bx bx-chevron-down fs-2'></i>
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a class="nav-link" href="lineaoro.html">Linea de Oro</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="lineaplata.html">Linea de Plata</a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a class="h-100 p-2" href="#">Servicios</a>
-                    </li>
+                        <li>
+                            <a class="h-100 p-2" href="Servicios.html">Servicios</a>
+                        </li>
 
-                </ul>
-            </nav>
-        </section>
-        <!-- fin menu:productos-servicios -->
+                    </ul>
+                </nav>
+            </section>
+            <!-- fin menu:productos-servicios -->
 
-            <section>
+            <section class="mt-5 px-5">
 
-                <hr class="mt-0">
-                <br>
                 <h1 class="text-center mb-5">COMPROMISO LEGAL</h1>
 
                 <h5>Politica General</h5>
 
-                <p class="fs-5 mb-5">
-                    Respetar la ley y anteponer el comportamiento ético en el desarrollo de la misión, los objetivos
-                    sociales y metas comerciales promoviendo en todos los grupos de interés el respeto por el
-                    cumplimiento normativo y el rechazo hacia conductas que van en contra de delitos asociados a
-                    LAFT/FPADM.
+                <div class="row">
 
-                    Para Valoros de Colombia es prioridad sostener excelentes relaciones con sus aliados estratégicos
-                    basada en sus pilares fundamentales como la confianza, responsabilidad y transparencia; además de
-                    dar cumplimiento con la normativa vigente a nivel organizacional apoyado en su estructura
-                    corporativa.
+                    <div class="col-12 col-sm-6">
 
+                        <p>
+                            Respetar la ley y anteponer el comportamiento ético en el desarrollo de la misión, los
+                            objetivos
+                            sociales y metas comerciales promoviendo en todos los grupos de interés el respeto por el
+                            cumplimiento normativo y el rechazo hacia conductas que van en contra de delitos asociados a
+                            LAFT/FPADM.
+                        </p>
 
-                    La compañía VALOROS DE COLOMBIA por pertenecer a un sector de la economía vulnerable y susceptible
-                    de ser utilizada con fines criminales, ha adoptado un sistema de gestión del riesgo LAFT/FPADM -,
-                    cumpliendo con las normas establecidas por los entes competentes así como las recomendaciones y
-                    mejores prácticas empresariales presentadas en esta materia, principalmente las del Grupo de Acción
-                    Financiera Internacional sobre el Dinero - GAFI, y la Organización para la Cooperación y Desarrollo
-                    económico - OCDE.
-                    Las políticas, controles y procedimientos implementados, dentro de un concepto de administración del
-                    riesgo, son acciones que buscan la debida diligencia y debida diligencia intensificada para prevenir
-                    el uso de la compañía por elementos criminales para propósitos ilícitos. Dichas acciones incluyen,
-                    entre otros aspectos, el conocimiento del tercero (aportantes, beneficiarios, empleados y
-                    fundadores) y sus operaciones, la definición de segmentos de mercado atendidos por factor de riesgo
-                    y el envío de reportes a las autoridades competentes. . De tal forma, la compañía dispone de un
-                    manual SAGRILAFT en el cual se describen las políticas institucionales entorno a la prevención de
-                    LA/FT/FPADM, las metodologías para la adecuada gestión del riesgo de LA/FT/FPADM, los procedimientos
-                    que deben seguirse para la prevención del riesgo, así como los mecanismos e instrumentos de control
-                    para resguardarse del mencionado delito.
-                </p>
+                        <p>
+                            Para Valoros de Colombia es prioridad sostener excelentes relaciones con sus aliados
+                            estratégicos
+                            basada en sus pilares fundamentales como la confianza, responsabilidad y transparencia;
+                            además de
+                            dar cumplimiento con la normativa vigente a nivel organizacional apoyado en su estructura
+                            corporativa.
+                        </p>
 
+                        <P>
+                            La compañía VALOROS DE COLOMBIA por pertenecer a un sector de la economía vulnerable y
+                            susceptible
+                            de ser utilizada con fines criminales, ha adoptado un sistema de gestión del riesgo
+                            LAFT/FPADM -,
+                            cumpliendo con las normas establecidas por los entes competentes así como las
+                            recomendaciones y
+                            mejores prácticas empresariales presentadas en esta materia, principalmente las del Grupo de
+                            Acción
+                            Financiera Internacional sobre el Dinero - GAFI, y la Organización para la Cooperación y
+                            Desarrollo
+                            económico - OCDE.
+                        </P>
 
-                <img class="w-50" src="../img/6.jpg" alt="">
+                        <P>
+                            Las políticas, controles y procedimientos implementados, dentro de un concepto de
+                            administración del
+                            riesgo, son acciones que buscan la debida diligencia y debida diligencia intensificada para
+                            prevenir
+                            el uso de la compañía por elementos criminales para propósitos ilícitos. Dichas acciones
+                            incluyen,
+                            entre otros aspectos, el conocimiento del tercero (aportantes, beneficiarios, empleados y
+                            fundadores) y sus operaciones, la definición de segmentos de mercado atendidos por factor de
+                            riesgo
+                            y el envío de reportes a las autoridades competentes. . De tal forma, la compañía dispone de
+                            un
+                            manual SAGRILAFT en el cual se describen las políticas institucionales entorno a la
+                            prevención de
+                            LA/FT/FPADM, las metodologías para la adecuada gestión del riesgo de LA/FT/FPADM, los
+                            procedimientos
+                            que deben seguirse para la prevención del riesgo, así como los mecanismos e instrumentos de
+                            control
+                            para resguardarse del mencionado delito.
+                        </p>
+
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                        <img class="w-100" src="../img/6.jpg" alt="">
+                    </div>
+
+                </div>
 
             </section>
-         
+
         </main>
 
         <footer>

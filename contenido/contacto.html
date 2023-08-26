@@ -14,6 +14,42 @@
 
 <body>
 
+    <!-- aside oculto -->
+    <div>
+        <input type="checkbox" id="menu-bar" />
+        <aside class="aside d-flex">
+
+            <ul class="w-100 pt-5">
+                <li>
+                    <a class="text-decoration-none text-white" href="#">CORPORATIVO
+                        <i class='bx bx-chevron-down fs-2'></i>
+                    </a>
+                    <ul class="py-2">
+                        <li class="menu-item">
+                            <a class="text-decoration-none" href="corporativo.html">Nuestra
+                                hitoria</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="text-decoration-none" href="compromiso.html">Nuestro
+                                compromiso legal</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="text-decoration-none" href="sostenibilidad.html">SOSTENIBILIDAD</a>
+                </li>
+                <li class="menu-item">
+                    <a class="text-decoration-none active" href="contacto.html">CONTACTANOS</a>
+                </li>
+            </ul>
+
+            <label for="menu-bar" class="close-bar"><img class="w-100" src="../img/close-bold-svgrepo-com.svg"
+                    alt="menu" /></label>
+
+        </aside>
+    </div>
+    <!-- fin aside oculto -->
+
     <div class="container p-0">
 
         <!-- logo-menu -->
@@ -28,11 +64,20 @@
                     <img class="w-100" src="../img/menu.svg" alt="menu" /></label>
             </div>
 
-
             <div class="d-none d-sm-flex justify-content-center">
                 <ul class="d-flex h-100">
-                    <li class="nav-item">
-                        <a class="nav-link fs-4" href="corporativo.html">Corporativo</a>
+                    <li class="has-submenu" style="position: relative;">
+                        <a class="nav-link fs-5 d-flex" href="#">Corporativo
+                            <i class='bx bx-chevron-down fs-2'></i>
+                        </a>
+                        <ul class="submenu py-2" style="background-color: white;z-index: 100; border: 1px solid;">
+                            <li>
+                                <a class="nav-link" href="corporativo.html">Nuestra hitoria</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="compromiso.html">Nuestro compromiso legal</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-4" href="sostenibilidad.html">Sostenibilidad</a>
@@ -54,13 +99,9 @@
                     <ul class="p-0 m-0">
 
                         <li class="has-submenu">
-                            <a class="h-100 p-2" href="#">
+                            <a class="h-100 p-2 d-flex" href="#">
                                 Productos
-                                <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em"
-                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                    <path
-                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                                </svg>
+                                <i class='bx bx-chevron-down fs-2'></i>
                             </a>
                             <ul class="submenu">
                                 <li>
@@ -82,7 +123,7 @@
             <!-- fin menu:productos-servicios -->
 
             <section class="mt-5 px-5">
-                
+
                 <h1 class="text-center mb-5">CONTACTO</h1>
 
                 <div class="row mb-5">
