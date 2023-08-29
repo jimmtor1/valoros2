@@ -333,7 +333,7 @@ section{
   background-image: linear-gradient(    
     rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.6)),
-    url("/img/IMG_9784.JPG");
+    url("../img/IMG_9784.JPG");
     /* background-size: cover; */
   z-index: 99999;
 }
