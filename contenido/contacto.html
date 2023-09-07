@@ -137,34 +137,35 @@
 
                     <div class="col-12 col-sm-6 order-sm-last mb-5">
 
-                        <form action="">
+                        <form action="https://formsubmit.co/info@valoros.co" method="POST">
                             <div class="mb-3">
                                 <label for="nombre">Nombre</label>
-                                <input class="form-control" type="text" value="" id="nombre">
+                                <input class="form-control" type="text" name="nombre" value="" id="nombre">
                             </div>
 
                             <div class="mb-3">
                                 <label for="email">Correo Electrónico</label>
-                                <input class="form-control" type="email" value="" id="email">
+                                <input class="form-control" type="email" name="email" value="" id="email">
                             </div>
 
                             <div class="mb-3">
                                 <label for="asunto">Asunto</label>
-                                <input class="form-control" type="text" value="" id="Asunto">
+                                <input class="form-control" type="text" name="asunto" value="" id="Asunto">
                             </div>
 
                             <div class="mb-3">
                                 <label for="mensaje">Mensaje</label>
-                                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
                             </div>
 
                             <input type="submit" class="btn btn-warning" value="Enviar">
+                            <input type="hidden" name="_subject" value="Mensaje desde valoros.co" >                           
 
                         </form>
 
                     </div>
 
-
+                    
 
                     <div class="col-12 col-sm-6">
 
