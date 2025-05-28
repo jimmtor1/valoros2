@@ -8,8 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/valoros.css" />
-    <link rel="icon" href="../img/LogoValoros -icono.jpg" />
+    <link rel="icon" href="../img/LogoValoros -icono.ico" />
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11534101242"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11534101242');
+    </script>
+    <!-- Event snippet for boton whatsapp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-10949085744/Ic3VCLHg69IZELCU9-Qo',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
 </head>
 
 <body>
@@ -55,8 +82,8 @@
 
     <div class="container p-0 bg-light">
 
-         <!-- logo-menu -->
-         <header class="d-flex justify-content-between">
+        <!-- logo-menu -->
+        <header class="d-flex justify-content-between">
 
             <a href="../index.html">
                 <img class="w-75" style="margin-left: 20px;" src="../img/LogoValoros.webp" alt="logo-valoros" />
@@ -132,12 +159,13 @@
             <section class="mt-5 px-5">
 
                 <h1 class="text-center mb-5">CONTACTO</h1>
-<hr>
+                <hr>
                 <div class="row mb-5 text-dark">
 
                     <div class="col-12 col-sm-6 order-sm-last mb-5">
 
                         <form action="https://formsubmit.co/bb2299c131b8c70322d0135dfe83db44" method="POST">
+                        <!-- <form action="https://formsubmit.co/info@valoros.co" method="POST"> -->
                             <div class="mb-3">
                                 <label for="nombre">Nombre</label>
                                 <input class="form-control" type="text" name="nombre" value="" id="nombre">
@@ -159,15 +187,15 @@
                             </div>
 
                             <input type="submit" class="btn btn-warning" value="Enviar">
-                            <input type="hidden" name="_subject" value="Mensaje desde valoros.co" >                           
+                            <input type="hidden" name="_subject" value="Mensaje desde valoros.co">
 
                         </form>
-                       
-                    </a>
+
+                        </a>
 
                     </div>
 
-                    
+
 
                     <div class="col-12 col-sm-6">
 
@@ -185,17 +213,20 @@
                             </div>
                         </div> -->
 
-                        <div>                         
-                            <a href="https://www.facebook.com/valorosdecolombia?mibextid=LQQJ4d" target="_blank" style="color:transparent">
+                        <div>
+                            <a href="https://www.facebook.com/valorosdecolombia?mibextid=LQQJ4d" target="_blank"
+                                style="color:transparent">
                                 <i class='bx bxl-facebook-square text-dark fs-2'></i>
                             </a>
-                            <a style="color:transparent" target="_blank" href="https://wa.me/+573012784797/?text=Hola, quiero conocer más de los servicios">                           
+                            <a id="whatsapp-button" style="color:transparent" target="_blank"
+                                href="https://wa.me/+573012784797/?text=Hola, quiero conocer más de los servicios">
                                 <i class='bx bxl-whatsapp text-dark fs-2'></i>
-                            </a>    
+                            </a>
                             <!-- <a href="#" style="color:transparent">
                                 <i class='bx bxl-whatsapp text-white fs-2'></i>
                             </a> -->
-                            <a href="https://instagram.com/valoroscolombia?igshid=MzRlODBiNWFlZA==" style="color:transparent" target="_blank">
+                            <a href="https://instagram.com/valoroscolombia?igshid=MzRlODBiNWFlZA=="
+                                style="color:transparent" target="_blank">
                                 <i class='bx bxl-instagram-alt text-dark  fs-2'></i>
                             </a>
                         </div>
@@ -243,7 +274,12 @@
         </footer>
 
     </div>
-
+    <script>
+        document.getElementById('whatsapp-button').addEventListener('click', function (e) {
+            e.preventDefault(); // Previene que el enlace se abra inmediatamente
+            gtag_report_conversion(this.href);
+        });
+    </script>
     <!-- <script src="../js/bootstrap.bundle.min.js"></script> -->
 </body>
 

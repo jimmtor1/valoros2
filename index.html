@@ -6,10 +6,41 @@
     <title>Valoros</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="VALOROS DE COLOMBIA: Expertos en la industrialización de metales preciosos con procesos tecnificados, sostenibles y comprometidos con la calidad y transparencia.">
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/valoros.css" />
-    <link rel="icon" href="img/LogoValoros -icono.jpg" />
+    <link rel="stylesheet" href="css/valoros.min.css" />
+    <link rel="icon" href="img/LogoValoros -icono.ico" />
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11534101242"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11534101242');
+    </script>
+
+    <!-- Event snippet for boton whatsapp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-10949085744/Ic3VCLHg69IZELCU9-Qo',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
+
 </head>
 
 <body>
@@ -61,7 +92,7 @@
         <header class="d-flex justify-content-between m-0 p-0">
 
 
-            <a href="index.html">
+            <a href="#">
                 <img class="w-75" style="margin-left: 20px;" src="img/LogoValoros.webp" alt="logo-valoros" />
             </a>
 
@@ -185,15 +216,18 @@
                     <div>
                         <h3 class="text-center" style="color: #F3B830;">Contacta con nosotros</h3>
 
-                        <div class="text-center">                          
-                            <a href="https://www.facebook.com/valorosdecolombia?mibextid=LQQJ4d" target="_blank" style="color:transparent">
+                        <div class="text-center">
+                            <a href="https://www.facebook.com/valorosdecolombia?mibextid=LQQJ4d" target="_blank"
+                                style="color:transparent">
                                 <i class='bx bxl-facebook-square text-white fs-2'></i>
                             </a>
-                            
-                            <a style="color:transparent" target="_blank" href="https://wa.me/+573012784797/?text=Hola, quiero conocer más de los servicios">                           
+
+                            <a id="whatsapp-button" style="color:transparent" target="_blank"
+                                href="https://wa.me/+573012784797/?text=Hola, quiero conocer más de los servicios">
                                 <i class='bx bxl-whatsapp fs-2' style="color:rgb(27, 233, 27)"></i>
                             </a>
-                            <a href="https://instagram.com/valoroscolombia?igshid=MzRlODBiNWFlZA==" style="color:transparent" target="_blank">
+                            <a href="https://instagram.com/valoroscolombia?igshid=MzRlODBiNWFlZA=="
+                                style="color:transparent" target="_blank">
                                 <i class='bx bxl-instagram-alt text-white fs-2'></i>
                             </a>
                         </div>
@@ -201,7 +235,7 @@
                 </div>
 
             </section>
-     
+
         </main>
 
 
@@ -230,7 +264,14 @@
 
     </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('whatsapp-button').addEventListener('click', function (e) {
+            e.preventDefault(); // Previene que el enlace se abra inmediatamente
+            gtag_report_conversion(this.href);
+        });
+    </script>
+
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
 
 
 </body>

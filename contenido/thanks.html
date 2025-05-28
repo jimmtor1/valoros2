@@ -3,35 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Valoros</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/valoros.css" />
-    <link rel="icon" href="../img/LogoValoros -icono.ico" />
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11534101242"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'AW-11534101242');
-    </script>
+    <link rel="icon" href="../img/LogoValoros -icono.ico" />    
 
 </head>
 
 <body>
 
-     <!-- aside oculto -->
-     <div>
+    <!-- aside oculto -->
+    <div>
         <input type="checkbox" id="menu-bar" />
         <aside class="aside d-flex">
 
             <ul class="w-100 pt-5">
                 <li>
-                    <a class="text-decoration-none text-white" href="Corporativo.html">CORPORATIVO
+                    <a class="text-decoration-none text-white" href="#">CORPORATIVO
                         <i class='bx bx-chevron-down fs-2'></i>
                     </a>
                     <ul class="py-2">
@@ -43,16 +33,16 @@
                             <a class="text-decoration-none" href="compromiso.html">Nuestro
                                 compromiso legal</a>
                         </li>
-                        <li class="menu-item">
-                            <a class="text-decoration-none" href="brochure.html">Corporativo</a>
+                        <li>
+                            <a class="nav-link" href="brochure.html">Corporativo</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <a class="text-decoration-none active" href="sostenibilidad.html">SOSTENIBILIDAD</a>
+                    <a class="text-decoration-none" href="sostenibilidad.html">SOSTENIBILIDAD</a>
                 </li>
                 <li class="menu-item">
-                    <a class="text-decoration-none" href="contacto.html">CONTACTANOS</a>
+                    <a class="text-decoration-none active" href="contacto.html">CONTACTANOS</a>
                 </li>
             </ul>
 
@@ -63,7 +53,7 @@
     </div>
     <!-- fin aside oculto -->
 
-    <div class="container p-0">
+    <div class="container p-0 bg-light">
 
         <!-- logo-menu -->
         <header class="d-flex justify-content-between">
@@ -97,17 +87,16 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fs-5" href="sostenibilidad.html">Sostenibilidad</a>
+                        <a class="nav-link fs-5" href="sostenibilidad.html">Sostenibilidad</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5" href="contacto.html">Contáctenos</a>
+                        <a class="nav-link fs-5 active" href="contacto.html">Contáctenos</a>
                     </li>
                 </ul>
             </div>
 
         </header>
         <!-- logo-menu -->
-
 
         <main class="mx-auto">
 
@@ -142,35 +131,13 @@
 
             <section class="mt-5 px-5">
 
-                <h1 class="text-center mb-5">SOSTENIBILIDAD</h1>
+                <h1 class="text-center mb-5">GRACIAS</h1>
+                <hr>
 
-                <P>Conscientes de la afectación ambiental y social que genera nuestra actividad empresarial en la cadena
-                    productiva de metales preciosos, decidimos apoyar a la Fundación Reverd-Ser entidad sin animo de
-                    lucro
-                    orientada a promover y ejecutar procesos ambientales sostenibles y sociales, aportando al desrrollo
-                    integral de la niñez y el empoderamiento de las mujeres en esteado de vulnerabilidad entre otras
-                    poblaciones afectadas por la escasez de recursos.
-                </P>
-
-                <div class="d-flex">
-                    <P>Visita Reverd-Ser Fundación&nbsp;</P><a href="https://reverd-serfundacion.com/" target="_blank">Aquí</a>
-                </div>
-                
-
-                <div class="text-center mb-3">
-                    <img class="w-25" src="../img/logo-sin-fundacion.webp" alt="logo-reverd-ser">
-                </div>
-                
-
-                <div class="row text-center">
-                    <iframe class="col" width="100%" height="380" src="https://www.youtube.com/embed/EFsl7-UC4ZM?si=6NV2mPR-WDP3iweo"
-                        title="video Reverd-Ser" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <br>
             </section>
+
+
+
 
         </main>
 
@@ -198,7 +165,13 @@
         </footer>
 
     </div>
-
+    <script>
+        document.getElementById('whatsapp-button').addEventListener('click', function (e) {
+            e.preventDefault(); // Previene que el enlace se abra inmediatamente
+            gtag_report_conversion(this.href);
+        });
+    </script>
+    <!-- <script src="../js/bootstrap.bundle.min.js"></script> -->
 </body>
 
 </html>

@@ -5,12 +5,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="VALOROS DE COLOMBIA ofrece servicios metalúrgicos especializados en fundición y refinación de metales preciosos como oro y plata. Pureza certificada de 99,99% según requerimientos del cliente.">
     <title>Valoros</title>
-
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/valoros.css" />
-    <link rel="icon" href="../img/LogoValoros -icono.jpg" />
+    <link rel="icon" href="../img/LogoValoros -icono.ico" />
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11534101242"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11534101242');
+    </script>
+
+    <!-- Event snippet for boton whatsapp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-10949085744/Ic3VCLHg69IZELCU9-Qo',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
 
 </head>
 
@@ -165,7 +194,7 @@
                         <div class="d-flex justify-content-center">
                             <div class="call-to-action my-4 bg-light rounded p-2 shake-horizontal">
 
-                                <a style="color:transparent" target="_blank"
+                                <a id="whatsapp-button" style="color:transparent" target="_blank"
                                     href="https://wa.me/+573012784797/?text=Hola, quiero conocer más sobre los productos de oro">
                                     <p class="text-dark">Pregunta por la linea de Oro aquí</p>
                                     <div class="text-center">
@@ -213,6 +242,14 @@
     </div>
 
     <script src="../js/nvojs.js"></script>
+
+    <script>
+        document.getElementById('whatsapp-button').addEventListener('click', function (e) {
+            e.preventDefault(); // Previene que el enlace se abra inmediatamente
+            gtag_report_conversion(this.href);
+        });
+    </script>
+
 </body>
 
 </html>
