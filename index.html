@@ -64,9 +64,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <li class="nav-item">
                     <a class="nav-link fs-5" href="/">Inicio</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link fs-5" href="contenido/sostenibilidad.html">Productos</a>
-                </li>
+                </li> -->
              
                 <li class="has-submenu" style="position: relative;">
                     <a class="nav-link fs-5 d-flex" href="#">Nosotros
@@ -104,12 +104,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <ul class="p-0 m-0">
 
                     <li class="d-flex">
-                        <a class="h-100 p-2" href="contenido/lineaoro.html"><img src="img/goldstart.png" alt=""
+                        <a class="h-100 p-2" href="#lineaoro"><img src="img/goldstart.png" alt=""
                                 style="width: 46px;height: 46px;">&nbsp;&nbsp; Linea de Oro</a>
                     </li>
 
                     <li class="d-flex">
-                        <a class="h-100 p-2" href="contenido/lineaplata.html"><img src="img/silverstart.png" alt=""
+                        <a class="h-100 p-2" href="#lineaplata"><img src="img/silverstart.png" alt=""
                                 style="width: 46px;height: 46   px;"> Linea de Plata</a>
                     </li>
 
@@ -147,7 +147,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </section>
 
         <!-- linea de oro -->
-        <section class="products-section mt-5 py-5" style="background-color: #30353B;">
+        <section id="lineaoro" class="products-section mt-5 py-5" style="background-color: #30353B;">
 
             <div class="container py-2">
 
@@ -198,7 +198,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </section>
 
         <!-- linea de plata -->
-        <section class="py-5 products-section">
+        <section id="lineaplata" class="py-5 products-section">
 
             <div class="container py-2">
 
@@ -212,6 +212,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 </p>
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5 justify-content-center">
+
                     <div class="col">
                         <a href="contenido/nitrato_plata.html" class="card-link d-block h-100">
                             <div class="card product-card h-100" style="background-color: #1A1A1A;">
@@ -229,7 +230,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     <div class="col">
                         <a href="contenido/cianuro_plata.html" class="card-link d-block h-100">
                             <div class="card product-card h-100" style="background-color: #1A1A1A;">
-                                <img src="img/silver cyanide.png" class="card-img-top" alt="Hilo de Plata">
+                                <img src="img/silver cyanide.png" class="card-img-top" alt="Cianuro de plata">
                                 <div class="card-body">
                                     <h5 class="card-title text-white">Cianuro de Plata</h5>
                                     <p class="card-text text-white-50">
@@ -248,8 +249,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 <div class="card-body">
                                     <h5 class="card-title text-white">Cianuro de Plata Potasio</h5>
                                     <p class="card-text text-white-50">
-                                        Plata en barra, lámina o granulado con pureza certificada de 99,99%. Excelente
-                                        conductividad y maleabilidad.
+                                        Utilizado en diversos procesos industriales, incluyendo la galvanoplastia y la extracción de metales preciosos.
                                     </p>
                                 </div>
                             </div>
@@ -263,7 +263,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 <div class="card-body">
                                     <h5 class="card-title text-white">Ánodos de Plata</h5>
                                     <p class="card-text text-white-50">
-                                        xxxxx
+                                        Fabricado con plata pura o aleada.
                                     </p>
                                 </div>
                             </div>
@@ -304,7 +304,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
         </section>
 
-
         <!-- contacta -->
         <section class="row px-5 py-4" style="background-color: #30353B;">
             <div class="d-flex align-items-center justify-content-center my-5">
@@ -336,8 +335,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 </div>
             </div>
         </section>
-
-
 
         <!-- image+presentation -->
         <section class="p-5 fondosection d-flex align-items-center flex-column justify-content-center"

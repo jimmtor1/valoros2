@@ -15,7 +15,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11534101242"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'AW-11534101242');
@@ -65,25 +65,33 @@
     </div>
     <!-- fin aside oculto -->
 
-    <div class="container p-0">
+    <div class=" p-0">
 
         <!-- logo-menu -->
-        <header class="d-flex justify-content-between">
-
-            <a href="../index.html">
-                <img class="w-75" style="margin-left: 20px;" src="../img/LogoValoros.webp" alt="logo-valoros" />
+        <header class="d-flex justify-content-between m-0 p-0">
+            <!-- imagen logo -->
+            <a href="/">
+                <img class="w-75" style="margin-left: 20px; min-width: 140px;" src="/img/LogoValoros.webp"
+                    alt="logo-valoros" />
             </a>
 
-            <div class="d-flex d-sm-none w-100 justify-content-end" style="align-items: center;">
-                <label for="menu-bar" class="" style="width: 18%;">
-                    <img class="w-100" src="../img/menu.svg" alt="menu" /></label>
+            <!-- icono menu -->
+            <div class="d-flex d-sm-none w-100 justify-content-end" style="align-items: center">
+                <label for="menu-bar" class="" style="width: 18%">
+                    <img class="w-100" src="/img/menu.svg" alt="menu" /></label>
             </div>
 
-
             <div class="d-none d-sm-flex justify-content-center">
-                <ul class="d-flex h-100">
+                <ul class="d-flex h-100 gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="/">Inicio</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link fs-5" href="sostenibilidad.html">Productos</a>
+                    </li> -->
+
                     <li class="has-submenu" style="position: relative;">
-                        <a class="nav-link fs-5 d-flex active" href="#">Corporativo
+                        <a class="nav-link fs-5 d-flex" href="#">Nosotros
                             <i class='bx bx-chevron-down fs-2'></i>
                         </a>
                         <ul class="submenu py-2" style="background-color: white;z-index: 100; border: 1px solid;">
@@ -91,67 +99,63 @@
                                 <a class="nav-link" href="corporativo.html">Nuestra historia</a>
                             </li>
                             <li>
-                                <a class="nav-link active" href="compromiso.html">Nuestro compromiso legal</a>
+                                <a class="nav-link" href="compromiso.html">Nuestro compromiso legal</a>
                             </li>
                             <li>
                                 <a class="nav-link" href="brochure.html">Corporativo</a>
                             </li>
                         </ul>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link fs-5" href="sostenibilidad.html">Sostenibilidad</a>
+                        <a class="nav-link fs-5" href="sostenibilidad.html">sostenibilidad</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="contacto.html">Contáctenos</a>
+
+                    <li class="menu-item">
+                        <a class="text-decoration-none text-white" href="contacto.html">Contáctanos</a>
                     </li>
                 </ul>
             </div>
-
         </header>
-        <!-- logo-menu -->
+
 
         <main class="mx-auto mb-1">
 
             <!-- menu:productos-servicios -->
             <section class="p-0 m-0">
-                <nav class="dark p-0 m-0">
+                <nav class="p-0 m-0 dark" style="background-color: #1A1A1A;">
                     <ul class="p-0 m-0">
 
-                        <li class="has-submenu">
-                            <a class="h-100 p-2 d-flex" href="#">
-                                Productos
-                                <i class='bx bx-chevron-down fs-2'></i>
-                            </a>
-                            <ul class="submenu">
-                                <li>
-                                    <a class="nav-link" href="lineaoro.html">Linea de Oro</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="lineaplata.html">Linea de Plata</a>
-                                </li>
-                            </ul>
+                        <li class="d-flex">
+                            <a class="h-100 p-2" href="/#lineaoro"><img src="/img/goldstart.png" alt=""
+                                    style="width: 40px;height: 40px;">&nbsp;&nbsp; Linea de Oro</a>
+                        </li>
+
+                        <li class="d-flex">
+                            <a class="h-100 p-2" href="/#lineaplata"><img src="/img/silverstart.png" alt=""
+                                    style="width: 40px;height: 40px;"> Linea de Plata</a>
                         </li>
 
                         <li>
-                            <a class="h-100 p-2" href="Servicios.html">Servicios Metalúrgicos</a>
+                            <a class="h-100 p-2 d-flex align-items-center" href="Servicios.html">Servicios
+                                Metalúrgicos</a>
                         </li>
 
                     </ul>
                 </nav>
             </section>
-            <!-- fin menu:productos-servicios -->
 
             <section class="mt-5 px-5">
 
                 <h1 class="text-center mb-5">COMPROMISO LEGAL</h1>
 
-                <h5>Politica General</h5>
+                <h3 class="text-warning">Política General</h3>
 
                 <div class="row">
 
                     <div class="col-12 col-sm-6">
 
-                        <p>
+                        <p class="fs-5">
                             Respetar la ley y anteponer el comportamiento ético en el desarrollo de la misión, los
                             objetivos
                             sociales y metas comerciales promoviendo en todos los grupos de interés el respeto por el
@@ -159,7 +163,7 @@
                             LAFT/FPADM.
                         </p>
 
-                        <p>
+                        <p class="fs-5">
                             Para Valoros de Colombia es prioridad sostener excelentes relaciones con sus aliados
                             estratégicos
                             basada en sus pilares fundamentales como la confianza, responsabilidad y transparencia;
@@ -168,7 +172,7 @@
                             corporativa.
                         </p>
 
-                        <P>
+                        <P class="fs-5">
                             La compañía VALOROS DE COLOMBIA por pertenecer a un sector de la economía vulnerable y
                             susceptible
                             de ser utilizada con fines criminales, ha adoptado un sistema de gestión del riesgo
@@ -182,7 +186,7 @@
                             económico - OCDE.
                         </P>
 
-                        <P>
+                        <P class="fs-5">
                             Las políticas, controles y procedimientos implementados, dentro de un concepto de
                             administración del
                             riesgo, son acciones que buscan la debida diligencia y debida diligencia intensificada para

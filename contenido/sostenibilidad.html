@@ -14,7 +14,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11534101242"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'AW-11534101242');
@@ -24,8 +24,8 @@
 
 <body>
 
-     <!-- aside oculto -->
-     <div>
+    <!-- aside oculto -->
+    <div>
         <input type="checkbox" id="menu-bar" />
         <aside class="aside d-flex">
 
@@ -63,25 +63,33 @@
     </div>
     <!-- fin aside oculto -->
 
-    <div class="container p-0">
+    <div class="p-0">
 
         <!-- logo-menu -->
-        <header class="d-flex justify-content-between">
-
-            <a href="../index.html">
-                <img class="w-75" style="margin-left: 20px;" src="../img/LogoValoros.webp" alt="logo-valoros" />
+        <header class="d-flex justify-content-between m-0 p-0">
+            <!-- imagen logo -->
+            <a href="/">
+                <img class="w-75" style="margin-left: 20px; min-width: 140px;" src="/img/LogoValoros.webp"
+                    alt="logo-valoros" />
             </a>
 
-            <div class="d-flex d-sm-none w-100 justify-content-end" style="align-items: center;">
-                <label for="menu-bar" class="" style="width: 18%;">
-                    <img class="w-100" src="../img/menu.svg" alt="menu" /></label>
+            <!-- icono menu -->
+            <div class="d-flex d-sm-none w-100 justify-content-end" style="align-items: center">
+                <label for="menu-bar" class="" style="width: 18%">
+                    <img class="w-100" src="img/menu.svg" alt="menu" /></label>
             </div>
 
-
             <div class="d-none d-sm-flex justify-content-center">
-                <ul class="d-flex h-100">
+                <ul class="d-flex h-100 gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="/">Inicio</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link fs-5" href="sostenibilidad.html">Productos</a>
+                    </li> -->
+
                     <li class="has-submenu" style="position: relative;">
-                        <a class="nav-link fs-5 d-flex" href="#">Corporativo
+                        <a class="nav-link fs-5 d-flex" href="#">Nosotros
                             <i class='bx bx-chevron-down fs-2'></i>
                         </a>
                         <ul class="submenu py-2" style="background-color: white;z-index: 100; border: 1px solid;">
@@ -96,55 +104,50 @@
                             </li>
                         </ul>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link active fs-5" href="sostenibilidad.html">Sostenibilidad</a>
+                        <a class="nav-link fs-5" href="sostenibilidad.html">sostenibilidad</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="contacto.html">Contáctenos</a>
+
+                    <li class="menu-item">
+                        <a class="text-decoration-none text-white" href="contacto.html">Contáctanos</a>
                     </li>
                 </ul>
             </div>
-
         </header>
-        <!-- logo-menu -->
 
 
         <main class="mx-auto">
 
             <!-- menu:productos-servicios -->
             <section class="p-0 m-0">
-                <nav class="dark p-0 m-0">
+                <nav class="p-0 m-0 dark" style="background-color: #1A1A1A;">
                     <ul class="p-0 m-0">
 
-                        <li class="has-submenu">
-                            <a class="h-100 p-2 d-flex" href="#">
-                                Productos
-                                <i class='bx bx-chevron-down fs-2'></i>
-                            </a>
-                            <ul class="submenu">
-                                <li>
-                                    <a class="nav-link" href="lineaoro.html">Linea de Oro</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="lineaplata.html">Linea de Plata</a>
-                                </li>
-                            </ul>
+                        <li class="d-flex">
+                            <a class="h-100 p-2" href="/#lineaoro"><img src="/img/goldstart.png" alt=""
+                                    style="width: 46px;height: 46px;">&nbsp;&nbsp; Linea de Oro</a>
+                        </li>
+
+                        <li class="d-flex">
+                            <a class="h-100 p-2" href="/#lineaplata"><img src="/img/silverstart.png" alt=""
+                                    style="width: 46px;height: 46   px;"> Linea de Plata</a>
                         </li>
 
                         <li>
-                            <a class="h-100 p-2" href="Servicios.html">Servicios Metalúrgicos</a>
+                            <a class="h-100 p-2 d-flex align-items-center" href="Servicios.html">Servicios
+                                Metalúrgicos</a>
                         </li>
 
                     </ul>
                 </nav>
             </section>
-            <!-- fin menu:productos-servicios -->
 
-            <section class="mt-5 px-5">
+            <section class="container mt-5">
 
                 <h1 class="text-center mb-5">SOSTENIBILIDAD</h1>
 
-                <P>Conscientes de la afectación ambiental y social que genera nuestra actividad empresarial en la cadena
+                <P class="fs-5">Conscientes de la afectación ambiental y social que genera nuestra actividad empresarial en la cadena
                     productiva de metales preciosos, decidimos apoyar a la Fundación Reverd-Ser entidad sin animo de
                     lucro
                     orientada a promover y ejecutar procesos ambientales sostenibles y sociales, aportando al desrrollo
@@ -153,18 +156,20 @@
                 </P>
 
                 <div class="d-flex">
-                    <P>Visita Reverd-Ser Fundación&nbsp;</P><a href="https://reverd-serfundacion.com/" target="_blank">Aquí</a>
+                    <p class="fs-5">Visita Reverd-Ser Fundación&nbsp;</p><a href="https://reverd-serfundacion.com/"
+                        target="_blank">Aquí</a>
                 </div>
-                
+
 
                 <div class="text-center mb-3">
                     <img class="w-25" src="../img/logo-sin-fundacion.webp" alt="logo-reverd-ser">
                 </div>
-                
+
 
                 <div class="row text-center">
-                    <iframe class="col" width="100%" height="380" src="https://www.youtube.com/embed/EFsl7-UC4ZM?si=6NV2mPR-WDP3iweo"
-                        title="video Reverd-Ser" frameborder="0"
+                    <iframe class="col" width="100%" height="380"
+                        src="https://www.youtube.com/embed/EFsl7-UC4ZM?si=6NV2mPR-WDP3iweo" title="video Reverd-Ser"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
                     </iframe>
@@ -174,25 +179,27 @@
 
         </main>
 
-        <footer>
+       <footer>
             <div class="contact row row-cols-1 row-cols-sm-4 m-0">
                 <div class="item_contact col">
-                    <i class='bx bx-copyright contact_icon'></i>
-                    <h3 class="contact_title">Valoros de colombia SAS</h3>
+                    <i class="bx bx-copyright contact_icon"></i>
+                    <h3 class="contact_title">© 2025 Valoros de Colombia</h3>
                 </div>
                 <div class="item_contact col">
-                    <i class='bx bx-mail-send contact_icon'></i>
+                    <i class="bx bx-mail-send contact_icon"></i>
                     <h3 class="contact_title">info@valoros.co</h3>
                     <h3 class="contact_title">Tel.: +604 3629056</h3>
                     <h3 class="contact_title">Cel/wp: +57 3012784797</h3>
                 </div>
                 <div class="item_contact col">
-                    <i class='bx bxs-edit-location contact_icon'></i>
+                    <i class="bx bxs-edit-location contact_icon"></i>
                     <h3 class="contact_title">Medellín - Antioquia</h3>
                 </div>
                 <div class="item_contact item_contact--gold col">
-                    <i class='bx bxs-chat contact_icon contact_icon--modifier'></i>
-                    <h3 class="contact_title">Contactanos ahora</h3>
+                    <i class="bx bxs-chat contact_icon contact_icon--modifier"></i>
+                    <a href="/contenido/contacto.html">
+                        <h3 class="contact_title">Contactanos ahora</h3>
+                    </a>
                 </div>
             </div>
         </footer>
