@@ -2,6 +2,19 @@
 <html>
 
 <head>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NVG7PSHQ');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,18 +27,18 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11534101242"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11534101242"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'AW-11534101242');
-    </script>
+    </script> -->
 
     <!-- Event snippet for boton whatsapp conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
+    <!-- <script>
         function gtag_report_conversion(url) {
             var callback = function () {
                 if (typeof (url) != 'undefined') {
@@ -38,12 +51,20 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             });
             return false;
         }
-    </script>
+    </script> -->
 
 
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVG7PSHQ" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- aside oculto -->
     <div>
@@ -123,11 +144,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link fs-5" href="sostenibilidad.html">sostenibilidad</a>
+                    <a class="nav-link fs-5" href="sostenibilidad.html">Sostenibilidad</a>
                 </li>
 
-                <li class="menu-item">
-                    <a class="text-decoration-none text-white" href="contacto.html">Contáctanos</a>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="contacto.html">Contáctanos</a>
                 </li>
                 </ul>
             </div>
@@ -138,7 +159,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <!-- menu:productos-servicios -->
             <section class="p-0 m-0">
                 <nav class="p-0 m-0 dark" style="background-color: #1A1A1A;">
-                    <ul class="p-0 m-0 w-100">
+                    <ul class="p-0 m-0 w-100 text-center">
 
                     <li class="d-flex w-100">
                         <a class="h-100 p-2" href="/#lineaoro"><img src="/img/goldstart.png" alt=""
@@ -151,7 +172,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     </li>
 
                     <li class="w-100">
-                        <a class="h-100 p-2 d-flex align-items-center" href="servicios.html">Servicios
+                        <a class="h-100 p-2" href="servicios.html">Servicios
                             Metalúrgicos</a>
                     </li>
 
@@ -240,14 +261,20 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
     </div>
 
+    <!-- boton de whatsapp flotante -->
+    <!-- <a href="https://wa.me/+573012784797/?text=Hola, quiero conocer más sobre los productos" class="whatsapp-float"
+        target="_blank" aria-label="Chat en WhatsApp">
+        <img src="/img/wpp.png" alt="WhatsApp" width="60" height="60" class="rounded-pill">
+    </a> -->
+
     <script src="../js/nvojs.js"></script>
 
-    <script>
+    <!-- <script>
         document.getElementById('whatsapp-button').addEventListener('click', function (e) {
             e.preventDefault(); // Previene que el enlace se abra inmediatamente
             gtag_report_conversion(this.href);
         });
-    </script>
+    </script> -->
 
 </body>
 

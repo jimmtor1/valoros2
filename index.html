@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NVG7PSHQ');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <title>Valoros</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,7 +26,7 @@
     <link rel="icon" href="img/LogoValoros -icono.ico" />
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js)
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11534101242"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -23,11 +36,11 @@
         gtag("js", new Date());
 
         gtag("config", "AW-11534101242");
-    </script>
+    </script> -->
 
     <!-- Event snippet for boton whatsapp conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
+    <!-- <script>
         function gtag_report_conversion(url) {
             var callback = function () {
                 if (typeof url != "undefined") {
@@ -40,10 +53,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             });
             return false;
         }
-    </script>
+    </script> -->
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVG7PSHQ" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <div>
         <input type="checkbox" id="menu-bar" />
@@ -83,7 +104,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <header class="d-flex justify-content-between m-0 p-0">
         <!-- imagen logo -->
         <a href="/">
-            <img class="w-75" style="margin-left: 20px; min-width: 140px;" src="/img/LogoValoros.webp" alt="logo-valoros" />
+            <img class="w-75" style="margin-left: 20px; min-width: 140px;" src="/img/LogoValoros.webp"
+                alt="logo-valoros" />
         </a>
 
         <!-- icono menu -->
@@ -100,7 +122,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <!-- <li class="nav-item">
                     <a class="nav-link fs-5" href="contenido/sostenibilidad.html">Productos</a>
                 </li> -->
-             
+
                 <li class="has-submenu" style="position: relative;">
                     <a class="nav-link fs-5 d-flex" href="#">Nosotros
                         <i class='bx bx-chevron-down fs-2'></i>
@@ -122,8 +144,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     <a class="nav-link fs-5" href="contenido/sostenibilidad.html">Sostenibilidad</a>
                 </li>
 
-                <li class="menu-item">
-                    <a class="text-decoration-none text-white" href="/contenido/contacto.html">Contáctanos</a>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="/contenido/contacto.html">Contáctanos</a>
                 </li>
             </ul>
         </div>
@@ -134,7 +156,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         <!-- menu:productos-servicios -->
         <section class="p-0 m-0">
             <nav class="p-0 m-0 dark" style="background-color: #1A1A1A;">
-                <ul class="p-0 m-0 w-100">
+                <ul class="p-0 m-0 w-100 text-center">
 
                     <li class="d-flex w-100">
                         <a class="h-100 p-2" href="#lineaoro"><img src="img/goldstart.png" alt=""
@@ -147,7 +169,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     </li>
 
                     <li class="w-100">
-                        <a class="h-100 p-2 d-flex align-items-center" href="contenido/Servicios.html">Servicios
+                        <a class="h-100 p-2" href="contenido/Servicios.html">Servicios
                             Metalúrgicos</a>
                     </li>
 
@@ -253,7 +275,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 <div class="card-body">
                                     <h5 class="card-title text-white">Nitrato de Plata</h5>
                                     <p class="card-text text-white-50">
-                                        Un compuesto químico utilizado en diversos procesos industriales, galvanoplastia y extracción de metales preciosos.
+                                        Un compuesto químico utilizado en diversos procesos industriales, galvanoplastia
+                                        y extracción de metales preciosos.
                                     </p>
                                 </div>
                             </div>
@@ -282,14 +305,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 <div class="card-body">
                                     <h5 class="card-title text-white">Cianuro de Plata Potasio</h5>
                                     <p class="card-text text-white-50">
-                                        Utilizado en diversos procesos industriales, incluyendo la galvanoplastia y la extracción de metales preciosos.
+                                        Utilizado en diversos procesos industriales, incluyendo la galvanoplastia y la
+                                        extracción de metales preciosos.
                                     </p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                     <div class="col">
+                    <div class="col">
                         <a href="contenido/anodo-de-plata.html" class="card-link d-block h-100">
                             <div class="card product-card h-100" style="background-color: #1A1A1A;">
                                 <img src="../img/Anodos.jpg" class="card-img-top" alt="anodo de plata">
@@ -421,18 +445,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     </footer>
     <!-- </div> -->
 
-    <a href="https://wa.me/+573012784797/?text=Hola, quiero conocer más sobre el oro puro" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+    <a href="https://wa.me/+573012784797/?text=Hola, quiero conocer más sobre el oro puro" class="whatsapp-float"
+        target="_blank" aria-label="Chat en WhatsApp" id="whatsapp-button">
         <img src="/img/wpp.png" alt="WhatsApp" width="80" height="80" class="rounded-pill">
     </a>
 
-    <script>
+    <!-- <script>
         document
-            .getElementById("whatsapp-button")
-            .addEventListener("click", function (e) {
+            .getElementById("whatsapp-button").addEventListener("click", function (e) {
                 e.preventDefault(); // Previene que el enlace se abra inmediatamente
                 gtag_report_conversion(this.href);
             });
-    </script>
+    </script> -->
 
     <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
 </body>
