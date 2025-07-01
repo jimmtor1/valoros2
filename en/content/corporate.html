@@ -17,10 +17,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/bootstrap.css" />
-    <link rel="stylesheet" href="../css/valoros.css" />
-    <link rel="icon" href="../img/LogoValoros -icono.ico" />
+    <title>Valoros</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/valoros.css" />
+    <link rel="icon" href="/img/LogoValoros -icono.ico" />
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Google tag (gtag.js) -->
@@ -52,25 +52,14 @@
 
             <ul class="w-100 pt-5 fs-5">
 
-                <li class="menu-item m-2">
-                    <a class="text-decoration-none" href="/">Inicio</a>
-                </li> 
-                <li class="menu-item m-2">
-                    <a class="text-decoration-none" href="corporativo.html">Nuestra historia</a>
+                <li class="menu-item m-2"><a class="text-decoration-none" href="/en">Home</a></li>
+                <li class="menu-item m-2"><a class="text-decoration-none" href="corporate.html">Our History</a></li>
+                <li class="menu-item m-2"><a class="text-decoration-none" href="commitment.html">Our Legal
+                        Commitment</a></li>
+                <li class="menu-item m-2"><a class="text-decoration-none" href="brochure.html">Corporate</a></li>
+                <li class="menu-item m-2"><a class="text-decoration-none" href="sustainability.html">Sustainability</a>
                 </li>
-                <li class="menu-item m-2">
-                    <a class="text-decoration-none" href="compromiso.html">Nuestro compromiso legal</a>
-                </li>
-                <li class="menu-item m-2">
-                    <a class="text-decoration-none active" href="brochure.html">Corporativo</a>
-                </li>
-
-                <li class="menu-item m-2">
-                    <a class="text-decoration-none" href="sostenibilidad.html">Sostenibilidad</a>
-                </li>
-                <li class="menu-item m-2">
-                    <a class="text-decoration-none" href="contacto.html">Contáctanos</a>
-                </li>
+                <li class="menu-item m-2"><a class="text-decoration-none" href="contact.html">Contact Us</a></li>
             </ul>
 
             <label for="menu-bar" class="close-bar"><img class="w-100" src="../img/close-bold-svgrepo-com.svg"
@@ -80,12 +69,12 @@
     </div>
     <!-- fin aside oculto -->
 
-    <div class="p-0">
+    <div class="p-0 bg-light">
 
         <!-- logo-menu -->
         <header class="d-flex justify-content-between m-0 p-0">
             <!-- imagen logo -->
-            <a href="/">
+            <a href="/en">
                 <img class="w-75" style="margin-left: 20px; min-width: 140px;" src="/img/LogoValoros.webp"
                     alt="logo-valoros" />
             </a>
@@ -98,37 +87,17 @@
 
             <div class="d-none d-sm-flex justify-content-center">
                 <ul class="d-flex h-100 gap-5">
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="/">Inicio</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link fs-5" href="sostenibilidad.html">Productos</a>
-                    </li> -->
-
+                    <li class="nav-item"><a class="nav-link fs-5" href="/en">Home</a></li>
                     <li class="has-submenu" style="position: relative;">
-                    <a class="nav-link fs-5 d-flex" href="#">Nosotros
-                        <i class='bx bx-chevron-down fs-2'></i>
-                    </a>
-                    <ul class="submenu py-2" style="background-color: white;z-index: 100; border: 1px solid;">
-                        <li>
-                            <a class="nav-link" href="nuestra-historia.html">Nuestra historia</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="compromiso.html">Nuestro compromiso legal</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="corporativo.html">Corporativo</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link fs-5" href="sostenibilidad.html">Sostenibilidad</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link fs-5" href="contacto.html">Contáctanos</a>
-                </li>
+                        <a class="nav-link fs-5 d-flex" href="#">About Us <i class='bx bx-chevron-down fs-2'></i></a>
+                        <ul class="submenu py-2" style="background-color: white;z-index: 100; border: 1px solid;">
+                            <li><a class="nav-link" href="our-history.html">Our History</a></li>
+                            <li><a class="nav-link" href="commitment.html">Our Legal Commitment</a></li>
+                            <li><a class="nav-link" href="corporate.html">Corporate</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="sustainability.html">Sustainability</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </header>
@@ -137,30 +106,20 @@
 
             <!-- menu:productos-servicios -->
             <section class="p-0 m-0">
-            <nav class="p-0 m-0 dark" style="background-color: #1A1A1A;">
-                <ul class="p-0 m-0 w-100 text-center">
-
-                    <li class="d-flex w-100">
-                        <a class="h-100 p-2" href="/#lineaoro"><img src="/img/goldstart.png" alt=""
-                                style="width: 30px;height: 30px;">&nbsp;&nbsp; Linea de Oro</a>
-                    </li>
-
-                    <li class="d-flex w-100">
-                        <a class="h-100 p-2" href="/#lineaplata"><img src="/img/silverstart.png" alt=""
-                                style="width: 30px;height: 30px;"> Linea de Plata</a>
-                    </li>
-
-                    <li class="w-100">
-                        <a class="h-100 p-2" href="servicios.html">Servicios
-                            Metalúrgicos</a>
-                    </li>
-
-                </ul>
-            </nav>
-        </section>
-
+                <nav class="p-0 m-0 dark" style="background-color: #1A1A1A;">
+                    <ul class="p-0 m-0 w-100 text-center">
+                        <li class="d-flex w-100"><a class="h-100 p-2" href="/en/#lineaoro"><img src="/img/goldstart.png"
+                                    alt="" style="width: 30px;height: 30px;">&nbsp;&nbsp; Gold Line</a></li>
+                        <li class="d-flex w-100"><a class="h-100 p-2" href="/en/#lineaplata"><img
+                                    src="/img/silverstart.png" alt="" style="width: 30px;height: 30px;"> Silver Line</a>
+                        </li>
+                        <li class="w-100"><a class="h-100 p-2" href="services.html">Metallurgical Services</a></li>
+                    </ul>
+                </nav>
+            </section>
+            
             <!-- fin menu:productos-servicios -->
-            <h1 class="text-center my-5">Corporativo</h1>
+            <h1 class="text-center my-5">Corporate</h1>
             <section class="text-center">
                 <iframe width="80%" height="450px" src="https://www.youtube.com/embed/uy7NSPctxkE?si=BDNwzhFAn9bE7Xd_"
                     title="YouTube video player" frameborder="0"
@@ -170,7 +129,7 @@
             </section>
 
             <section class="mt-5 px-5">
-                <iframe src="../pdf/Brochure digital VALOROS DE COLOMBIA-2023.pdf" width="100%" height="800px"
+                <iframe src="/pdf/Brochure digital VALOROS DE COLOMBIA-2023.pdf" width="100%" height="800px"
                     frameborder="0">
                 </iframe>
             </section>
@@ -195,8 +154,8 @@
                 </div>
                 <div class="item_contact item_contact--gold col">
                     <i class="bx bxs-chat contact_icon contact_icon--modifier"></i>
-                    <a href="/contenido/contacto.html">
-                        <h3 class="contact_title">Contactanos ahora</h3>
+                    <a href="contact.html">
+                        <h3 class="contact_title">Contact us now</h3>
                     </a>
                 </div>
             </div>
@@ -204,8 +163,8 @@
 
     </div>
 
-     <!-- boton de whatsapp flotante -->
-    <a href="https://wa.me/+573012784797/?text=Hola, quiero conocer más sobre los productos" class="whatsapp-float"
+    <!-- boton de whatsapp flotante -->
+    <a href="https://wa.me/+573012784797/?text=Hello, I want to know more about the products" class="whatsapp-float"
         target="_blank" aria-label="Chat en WhatsApp" id="whatsapp-button">
         <img src="/img/wpp.png" alt="WhatsApp" width="60" height="60" class="rounded-pill">
     </a>
